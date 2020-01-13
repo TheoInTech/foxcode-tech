@@ -6,7 +6,13 @@ import './App.scss';
 const App = () => {
     return (
         <main className="main">
-            <Pane>
+            <Pane
+                display="flex"
+                flexWrap="wrap"
+                background="orangeTint"
+                justifyContent="center"
+                height="100vh"    
+            >
                 <Navbar />
             </Pane>
         </main>

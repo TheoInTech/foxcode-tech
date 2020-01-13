@@ -1,0 +1,10 @@
+@import '../../../assets/scss/main';
+
+.main__navbar {
+    margin: $spacing * 2;
+    margin-right: $spacing * 10;
+
+    @include breakpoint(tablet) {
+        margin-right: $spacing * 2;
+    }
+}

@@ -4,8 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './assets/scss/base/_base.scss';
 import './assets/scss/base/_font.scss';
 import './assets/scss/base/_typography.scss';
-// import App from './App';
-import Temp from './Temp';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 /**
@@ -17,7 +16,7 @@ import * as serviceWorker from './serviceWorker';
 */
 render(
     <BrowserRouter>
-        <Temp />
+        <App />
     </BrowserRouter>,
     document.getElementById('wrapper')
 );
