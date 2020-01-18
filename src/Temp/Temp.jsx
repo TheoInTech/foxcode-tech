@@ -14,7 +14,7 @@ const Temp = () => {
             >
                 <Pane display="flex" flexWrap="wrap" alignItems="center" justifyContent="center" textAlign="center" maxWidth={600} flexBasis="100%" margin={16}>
                     <img src="/logo.png" alt="logo" />
-                    <Heading size={900} marginTop={24}>The fox is heading your way...</Heading>
+                    <Heading size={900} marginTop={8}>The fox is heading your way...</Heading>
                 </Pane>
             </Pane>
         </main>

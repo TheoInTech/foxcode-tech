@@ -1,0 +1,24 @@
+@import '../../assets/scss/main';
+
+.fc-button {
+    background: getColor(fc-faded-orange);
+    text-transform: uppercase;
+    color: getColor(fc-orange);
+    transition: .2s ease-in-out .1s;
+    z-index: 9;
+    border: none;
+    border-radius: 0;
+    padding: ($spacing * 2) ($spacing * 3);
+    font-size: 14px;
+    font-weight: 600;
+
+    &:hover, &:focus {
+        color: getColor(fc-white);
+        background: getColor(fc-orange);
+    }
+
+    @include breakpoint(mobile) {
+        margin: ($spacing * 2) auto;
+        width: 100%;
+    }
+}

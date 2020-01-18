@@ -69,5 +69,14 @@ h6,
 }
 
 .color-brand {
-    color: getColor(mid-red);
+    color: getColor(fc-orange);
+}
+
+.font-menu {
+    font: $font-menu;
+}
+
+.text-emphasis {
+    color: getColor(fc-orange);
+    text-transform: uppercase;
 }
