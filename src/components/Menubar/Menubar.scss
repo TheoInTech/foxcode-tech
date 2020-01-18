@@ -1,0 +1,15 @@
+@import '../../assets/scss/main';
+
+.nav-item {
+    font: $font-menu;
+    margin-right: $spacing * 3;
+    margin-left: $spacing * 3;
+
+    .nav-link {
+        color: getColor(fc-gray) !important;
+
+        &.active {
+            color: getColor(fc-orange) !important;
+        }
+    }
+}

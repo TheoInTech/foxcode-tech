@@ -1,0 +1,43 @@
+@import '../../../../assets/scss/main';
+
+.services {
+    min-height: 560px;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 90px;
+    padding-top: 120px;
+
+    &__card {
+        border: none;
+
+        &__body {
+            -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.05);
+            box-shadow: 0 5px 40px rgba(0,0,0,.05);
+            text-align: center;
+            padding: ($spacing * 10) ($spacing * 4);
+
+            &__title {
+                margin-top: $spacing * 4;
+                font-size: $spacing * 3;
+                color: getColor(fc-black);
+                font-weight: 700;
+                transition: .3s linear;
+
+                &:hover {
+                    color: getColor(fc-orange);
+                }
+            }
+
+            &__description {
+                font-size: $spacing * 2;
+                line-height: 1.625;
+                color: getColor(fc-gray);
+            }
+        }
+        
+    }
+
+    @include breakpoint(mobile) {
+        margin-top: $spacing * 5;
+    }
+}

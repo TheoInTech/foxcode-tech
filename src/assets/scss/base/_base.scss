@@ -22,24 +22,24 @@ body {
 
 body {
     font: $font-body;
-    color: getColor(dark-brown);
-    background: getColor(white);
+    color: getColor(fc-black);
+    background: getColor(fc-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-    color: getColor(mid-red);
+    color: getColor(fc-orange);
     text-decoration: none;
     transition: 0.2s;
 
     &:hover {
-        color: getColor(mid-brown);
+        color: getColor(fc-light-orange);
         text-decoration: underline;
     }
 
     &:active {
-        color: getColor(mid-brown);
+        color: getColor(fc-light-orange);
         text-decoration: none;
     }
 }
@@ -52,6 +52,7 @@ p,
 ul,
 ol {
     margin: 0 0 $component_margin;
+    color: getColor(fc-gray);
 }
 
 p:last-child,
@@ -108,4 +109,56 @@ svg:not(:root) {
     > * {
         pointer-events: none;
     }
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+nav, section {
+    padding: 0 ($spacing * 24) !important;
+
+    @include breakpoint(mobile) {
+        padding: $spacing !important;
+    }
+}
+
+.title {
+    font: $font-title !important;
+    color: getColor(fc-black) !important;
+    margin-bottom: $spacing * 4;
+
+    @include breakpoint(mobile) {
+        font: $font-title-mobile !important;
+    }
+}
+
+.subtitle {
+    font: $font-subtitle !important;
+    color: getColor(fc-gray) !important;
+    margin-top: $spacing * 4;
+    margin-bottom: $spacing * 4;
+
+    @include breakpoint(mobile) {
+        font: $font-subtitle-mobile !important;
+    }
+}
+
+.section-title {
+    font: $font-section !important;
+    color: getColor(fc-orange) !important;
+    margin: 0;
+
+    @include breakpoint(mobile) {
+        font: $font-section-mobile !important;
+    }
+}
+
+.no-margin-padding {
+    margin: 0px;
+    padding: 0px;
 }

@@ -1,0 +1,28 @@
+@import '../../../../assets/scss/main';
+
+.about {
+    margin-top: $spacing * 20;
+    min-height: 890px;
+    position: relative;
+    overflow: hidden;
+
+    &__statement {
+        padding-top: $spacing * 8;
+
+        &__form {
+            margin-top: $spacing * 6;
+
+            @include breakpoint(mobile) {
+                margin-top: $spacing * 4;
+            }
+
+            &__input {
+                padding: 25px; 
+            }
+        }
+    }
+
+    @include breakpoint(mobile) {
+        margin-top: $spacing * 5;
+    }
+}

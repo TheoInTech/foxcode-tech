@@ -1,10 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/scss/base/_base.scss';
 import './assets/scss/base/_font.scss';
 import './assets/scss/base/_typography.scss';
-import App from './App';
+import Home from './screens/Home';
 import * as serviceWorker from './serviceWorker';
 
 /**
@@ -16,7 +17,7 @@ import * as serviceWorker from './serviceWorker';
 */
 render(
     <BrowserRouter>
-        <App />
+        <Home />
     </BrowserRouter>,
     document.getElementById('wrapper')
 );
