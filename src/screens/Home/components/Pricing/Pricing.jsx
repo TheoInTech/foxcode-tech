@@ -103,7 +103,7 @@ class Pricing extends Component {
                                 Use what you just need. Zero complexity.
                             </h2>
                             <p className="subtitle">
-                                You don't have to pay for stuff you won't use. Your website, your rules!<br/>
+                                You don't have to pay for stuff you won't use.<br/>Your website, your rules!
                             </p>
                         </Col>
                     </Row>
@@ -148,7 +148,7 @@ class Pricing extends Component {
                             <Card className="pricing__inclusions__card">
                                 <Card.Body className="pricing__inclusions__card__body">
                                     <Row>
-                                        <Col lg="6" xs="12">
+                                        <Col lg="6" xs="12" className="pricing__inclusions__card__body__includes">
                                             <h3 className="pricing__inclusions__card__body__title">What's included in the base package?</h3>
                                             <ul className="list-unstyled list-check pricing__inclusions__card__body__list">
                                                 <li>
@@ -168,7 +168,7 @@ class Pricing extends Component {
                                                 </li>
                                             </ul>
                                         </Col>
-                                        <Col lg="6" xs="12">
+                                        <Col lg="6" xs="12" className="pricing__inclusions__card__body__business">
                                             <h3 className="pricing__inclusions__card__body__title">Business approach -</h3>
                                             <p className="pricing__inclusions__card__body__description">
                                                 Our experts follow the business strategy to grow up your business and engage more customers to your door.
