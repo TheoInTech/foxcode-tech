@@ -1,0 +1,9 @@
+@import '../../assets/scss/main';
+
+.fc-card {
+    border: none;
+
+    @include breakpoint(mobile) {
+        margin-top: $spacing * 2;
+    }
+}

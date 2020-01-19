@@ -23,7 +23,7 @@ body {
 body {
     font: $font-body;
     color: getColor(fc-black);
-    background: getColor(fc-white);
+    background: #FCFCFC;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -53,6 +53,10 @@ ul,
 ol {
     margin: 0 0 $component_margin;
     color: getColor(fc-gray);
+}
+
+i {
+    color: getColor(fc-orange);
 }
 
 p:last-child,
@@ -120,10 +124,17 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 }
 
 nav, section {
-    padding: 0 ($spacing * 24) !important;
+    padding-right: ($spacing * 45) !important;
+    padding-left: ($spacing * 45) !important;
+
+    @include breakpoint(desktop) {
+        padding-right: ($spacing * 24) !important;
+        padding-left: ($spacing * 24) !important;
+    }
 
     @include breakpoint(mobile) {
-        padding: $spacing !important;
+        padding-right: $spacing !important;
+        padding-left: $spacing !important;
     }
 }
 
@@ -159,6 +170,6 @@ nav, section {
 }
 
 .no-margin-padding {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px !important;
+    padding: 0px !important;
 }

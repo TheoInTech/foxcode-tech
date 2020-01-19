@@ -1,12 +1,12 @@
 @import '../../../../assets/scss/main';
 
-.about {
-    margin-top: $spacing * 20;
+.steps {
+    margin-top: $spacing * 3;
     min-height: 890px;
     position: relative;
     overflow: hidden;
-    padding-right: 0px !important;
-    background: url('/images/bg_03.png');
+    text-align: center;
+    background: url('/images/bg_04.png');
     background-size: cover;
     background-repeat: no-repeat;
 

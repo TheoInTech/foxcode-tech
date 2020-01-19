@@ -1,0 +1,28 @@
+@import '../../../../assets/scss/main';
+
+.numeric-data {
+    background: -webkit-gradient(linear,left bottom,right top,color-stop(0,#fa7845),color-stop(100%,#e62002));
+    background: -webkit-linear-gradient(45deg,#fa7845 0,#e62002 100%);
+    background: -o-linear-gradient(45deg,#fa7845 0,#e62002 100%);
+    background: linear-gradient(45deg,#fa7845 0,#e62002 100%);
+    padding-bottom: 70px !important;
+    padding-top: 120px !important;
+    text-align: center;
+
+    &__counter {
+        margin-bottom: 50px;
+
+        &__count {
+            font-size: 44px;
+            margin-bottom: $spacing * 3;
+            color: getColor(fc-white);
+        }
+
+        &__description {
+            line-height: 1;
+            font-size: 26px;
+            font-weight: 700;
+            color: getColor(fc-white);
+        }
+    }
+}
