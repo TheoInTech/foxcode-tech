@@ -26,8 +26,8 @@ const About = () => {
                             Why develop a fully customized website from scratch when you can <span className="text-emphasis">rent</span> yours now?
                         </p>
                     </Col>
-                    <Col lg="6" xs="12" className="splash__image">
-                        <Image src="/images/splash.png" width="100%" />
+                    <Col lg="6" xs="12" className="about__image no-margin-padding">
+                        <Image src="/images/about.png" width="100%" />
                     </Col>
                 </Row>
             </Container>

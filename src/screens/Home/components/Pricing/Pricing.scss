@@ -1,0 +1,154 @@
+@import '../../../../assets/scss/main';
+
+.pricing {
+    margin-top: $spacing * 20;
+    min-height: 890px;
+    position: relative;
+    overflow: hidden;
+    background: url('/images/bg_02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__content {
+        margin-top: $spacing * 6;
+
+        &__title {
+            font-size: $spacing * 2;
+            line-height: 1.625;
+            color: getColor(fc-gray);
+            font-weight: 600;
+            margin-bottom: $spacing * 2;
+        }
+    }
+
+    &__statement {
+        padding-top: $spacing * 8;
+        text-align: center;
+    }
+
+    &__addons {
+        font-size: 21px;
+
+        &__switch {
+            margin-top: $spacing * 2;
+
+            .custom-switch {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__summary {
+        &__card {
+            border: none;
+    
+            @include breakpoint(mobile) {
+                margin-top: $spacing * 2;
+            }
+    
+            &__body {
+                -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.05);
+                box-shadow: 0 5px 40px rgba(0,0,0,.05);
+                text-align: center;
+    
+                &__title {
+                    font-size: $spacing * 3;
+                    color: getColor(fc-black);
+                    font-weight: 700;
+                    transition: .3s linear;
+    
+                    &:hover {
+                        color: getColor(fc-orange);
+                    }
+                }
+
+                &__cost {
+                    line-height: 3.5rem;
+                    font-size: $spacing * 8;
+                    color: getColor(fc-orange);
+                }
+    
+                &__description {
+                    font-size: $spacing * 2;
+                    line-height: 1.625;
+                    color: getColor(fc-gray);
+                }
+
+                &__disclaimer {
+                    text-align: left;
+                    font-size: 12px;
+                    line-height: 1.625;
+                    color: getColor(fc-gray);
+                    font-style: italic;
+                }
+            }
+            
+        }
+    }
+
+    &__inclusions {
+        margin-top: $spacing * 3;
+
+        &__card {
+            border: none;
+    
+            @include breakpoint(mobile) {
+                margin-top: $spacing * 2;
+            }
+    
+            &__body {
+                -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.05);
+                box-shadow: 0 5px 40px rgba(0,0,0,.05);
+                padding: $spacing * 4;
+    
+                &__title {
+                    font-size: $spacing * 3;
+                    color: getColor(fc-black);
+                    font-weight: 700;
+                    transition: .3s linear;
+    
+                    &:hover {
+                        color: getColor(fc-orange);
+                    }
+                }
+
+                &__description {
+                    font-size: $spacing * 2;
+                    line-height: 1.625;
+                    color: getColor(fc-gray);
+                }
+    
+                &__list {
+                    
+
+                    > li {
+                        font-size: 18px;
+                        font-style: italic;
+                        position: relative;
+                        color: getColor(fc-gray);
+
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+
+                        > svg {
+                            color: getColor(fc-orange);
+                            font-size: 1.2em;
+                        }
+
+                        > span {
+                            padding-left: $spacing * 4;
+                        }
+                    }
+
+                    
+                }
+            }
+            
+        }
+    }
+
+    @include breakpoint(mobile) {
+        margin-top: $spacing * 5;
+    }
+}

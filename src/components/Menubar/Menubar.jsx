@@ -16,10 +16,6 @@ class Menubar extends Component {
                 label: 'Home'
             },
             {
-                link: '/plans',
-                label: 'Plans'
-            },
-            {
                 link: '/faq',
                 label: 'FAQ'
             },

@@ -6,9 +6,16 @@
     overflow: hidden;
     padding-bottom: 90px;
     padding-top: 120px;
+    background: url('/images/bg_02.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 
     &__card {
         border: none;
+
+        @include breakpoint(mobile) {
+            margin-top: $spacing * 2;
+        }
 
         &__body {
             -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.05);
