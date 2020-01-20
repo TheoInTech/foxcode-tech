@@ -176,3 +176,43 @@ nav, section, footer {
     margin: 0px !important;
     padding: 0px !important;
 }
+
+.breadcrumbs {
+    list-style: none;
+    padding: 0px;
+
+    li {
+        font-size: 18px;
+        font-weight: 600;
+        display:inline;
+
+        &:not(:last-child) {
+            position: relative;
+            padding-right: 15px;
+            margin-right: 10px;
+
+            &:after {
+                right: 0;
+                position: absolute;
+                content: '/';
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+
+            a {
+                color: getColor(fc-black);
+
+                &:hover {
+                    color: getColor(fc-orange);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &:last-child {
+            color: getColor(fc-orange);
+        }
+    }
+}

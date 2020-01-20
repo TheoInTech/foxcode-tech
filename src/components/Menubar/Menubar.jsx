@@ -16,7 +16,7 @@ class Menubar extends Component {
                 label: 'Home'
             },
             {
-                link: '#pricing',
+                link: '/#pricing',
                 label: 'Pricing'
             },
             {
@@ -31,12 +31,14 @@ class Menubar extends Component {
     }
 
     render() {
+        const { active } = this.props;
+
         return (
             <Navbar bg="white" expand="lg" fixed="top">
                 <Navbar.Brand href="/"><Image src="/logo.png" width="90" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="justify-content-end flex-1" defaultActiveKey="/">
+                    <Nav className="justify-content-end flex-1" defaultActiveKey="/" activeKey={active}>
                         {
                             this.navs.map(nav => 
                                 <Nav.Item>

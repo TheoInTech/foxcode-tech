@@ -1,0 +1,17 @@
+@import '../../assets/scss/main';
+
+.contact {
+    margin-top: $spacing * 5;
+    padding-top: $spacing * 10;
+    min-height: 890px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: url('/images/bg_01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__header {
+        padding-top: $spacing * 8;
+    }
+}

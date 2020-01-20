@@ -1,0 +1,40 @@
+@import '../../assets/scss/main';
+
+.error404 {
+    .error-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex: 1;
+        height: 100vh;
+
+        .logo {
+            max-width: 450px;
+            margin-top: -($spacing * 15);
+
+            @include breakpoint(mobile) {
+                max-width: 100%;
+            }
+        }
+    
+        .description {
+            text-align: center;
+            line-height: 1.4;
+            font-size: $spacing * 4;
+
+            @include breakpoint(mobile) {
+                font-size: 21px;
+            }
+    
+            > a {
+                color: getColor(fc-orange);
+                
+                &:hover {
+                    color: getColor(fc-gray);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
