@@ -5,13 +5,14 @@
     position: relative;
     overflow: hidden;
     padding-bottom: 90px;
-    padding-top: 120px;
+    padding-top: 140px;
     background: url('/images/bg_02.png');
     background-size: cover;
     background-repeat: no-repeat;
 
     &__card {
         border: none;
+        height: $spacing * 60;
 
         @include breakpoint(mobile) {
             margin-top: $spacing * 2;
@@ -23,12 +24,17 @@
             text-align: center;
             padding: ($spacing * 10) ($spacing * 4);
 
+            &__image {
+                min-height: $spacing * 20; 
+            }
+
             &__title {
                 margin-top: $spacing * 4;
                 font-size: $spacing * 3;
                 color: getColor(fc-black);
-                font-weight: 700;
+                font-weight: 800;
                 transition: .3s linear;
+                line-height: 1.4;
 
                 &:hover {
                     color: getColor(fc-orange);

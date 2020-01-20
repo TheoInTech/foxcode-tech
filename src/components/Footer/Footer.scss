@@ -1,0 +1,124 @@
+@import '../../assets/scss/main';
+
+.footer {
+    background-image: url('/images/footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+
+    &__top {
+        padding-top: $spacing * 2;
+
+        >.container {
+            border-bottom: 1px solid getColor(fc-light-gray);
+
+            @include breakpoint(mobile) {
+                padding-bottom: $spacing * 2;
+            }
+        }
+
+        &__info {
+            &__logo {
+                margin-bottom: $spacing * 4;
+            }
+
+            &__title {
+                margin-bottom: $spacing * 4;
+                margin-top: $spacing * 2;
+
+                @include breakpoint(mobile) {
+                    margin-bottom: $spacing * 2;
+                }
+
+                > h4 {
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 18px;
+                }
+            }
+
+            &__content {
+
+                &__item {
+                    margin-bottom: $spacing * 2;
+
+                    &.media {
+                        display: flex;
+                        align-items: flex-start;
+                        margin-bottom: 0px;
+
+                        &__image {
+                            margin-right: 16px;
+                            width: 80px; 
+                        }
+
+                        &__title {
+                            
+                            > p {
+                                font-size: 12px;
+                                line-height: 1.4;
+                                margin-bottom: 5px;
+                                display: block;
+                            }
+
+                            > h5 {
+                                font-size: 14px;
+                                line-height: 1.4;
+                                margin: 0px;
+                                font-weight: 400;
+                                color: getColor(fc-black) !important;
+
+                                > a {
+                                    color: getColor(fc-black) !important;
+                                    &:hover {
+                                        text-decoration: none;
+                                        color: getColor(fc-orange) !important;
+                                    }
+                                }
+                            } 
+                        }
+                    }
+
+                    > span {
+                        font-size: 12px;
+                        line-height: 1.2;
+                        margin-bottom: 5px;
+                        display: block;
+                    }
+
+                    > p {
+                        line-height: 1.5;
+                        font-size: 14px;
+                    }
+                }
+
+                &__social {                    
+                    &:not(last-child) {
+                        margin-right: $spacing;
+                    }
+                    
+                    > svg {
+                        path {
+                            fill: getColor(fc-gray);
+                        }
+                    }
+
+                    > svg:hover path {
+                        transition: .2s ease-in-out .1s;
+                        fill: getColor(fc-orange);
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        padding: $spacing * 4;
+        text-align: center;
+        color: getColor(fc-gray);
+
+        @include breakpoint(mobile) {
+            padding: $spacing * 2;
+        }
+    }
+}

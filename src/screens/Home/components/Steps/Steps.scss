@@ -1,7 +1,8 @@
 @import '../../../../assets/scss/main';
 
 .steps {
-    margin-top: $spacing * 3;
+    margin-top: $spacing * 5;
+    padding-top: $spacing * 10;
     min-height: 890px;
     position: relative;
     overflow: hidden;
@@ -12,6 +13,52 @@
 
     &__statement {
         padding-top: $spacing * 8;
+    }
+
+    &__process {
+        margin-top: $spacing * 5;
+        background-image: url('/images/steps-dots.png');
+        background-position: 0% 35%;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include breakpoint(mobile) {
+            background-image: none;
+        }
+
+        &__wrapper {
+            margin-bottom: $spacing * 6;
+
+            &:nth-child(even) {
+                margin-top: $spacing * 25;
+
+                @include breakpoint(mobile) {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        &__image {
+            min-height: $spacing * 20;
+        }
+
+        &__title {
+            margin-top: $spacing * 4;
+            font-size: $spacing * 3;
+            color: getColor(fc-black);
+            font-weight: 800;
+            transition: .3s linear;
+
+            &:hover {
+                color: getColor(fc-orange);
+            }
+        }
+
+        &__description {
+            font-size: $spacing * 2;
+            line-height: 1.625;
+            color: getColor(fc-gray);
+        }
     }
 
     @include breakpoint(mobile) {

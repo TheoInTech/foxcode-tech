@@ -7,13 +7,13 @@ import './About.scss';
 
 const About = () => {
     return (
-        <section className="about">
+        <section className="about" id="about-us">
             <Container fluid>
                 <Row>
                     <Col lg="6" xs="12" className="about__statement">
                         <h3 className="section-title">About Fox Code</h3>
                         <h2 className="title">
-                            Developing your websites <span className="text-emphasis">intelligently.</span> Why?<br/>
+                            We'll develop your websites <span className="text-emphasis">intelligently.</span> Why?<br/>
                             Because this is how we make a living.<br/>
                         </h2>
                         <p className="subtitle">

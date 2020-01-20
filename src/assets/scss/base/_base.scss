@@ -53,6 +53,7 @@ ul,
 ol {
     margin: 0 0 $component_margin;
     color: getColor(fc-gray);
+    line-height: 1.4;
 }
 
 i {
@@ -123,7 +124,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     flex: 1;
 }
 
-nav, section {
+nav, section, footer {
     padding-right: ($spacing * 45) !important;
     padding-left: ($spacing * 45) !important;
 
@@ -142,6 +143,7 @@ nav, section {
     font: $font-title !important;
     color: getColor(fc-black) !important;
     margin-bottom: $spacing * 4;
+    line-height: 1.4;
 
     @include breakpoint(mobile) {
         font: $font-title-mobile !important;
@@ -153,6 +155,7 @@ nav, section {
     color: getColor(fc-gray) !important;
     margin-top: $spacing * 4;
     margin-bottom: $spacing * 4;
+    line-height: 1.4;
 
     @include breakpoint(mobile) {
         font: $font-subtitle-mobile !important;

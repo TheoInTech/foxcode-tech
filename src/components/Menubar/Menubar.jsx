@@ -16,6 +16,10 @@ class Menubar extends Component {
                 label: 'Home'
             },
             {
+                link: '#pricing',
+                label: 'Pricing'
+            },
+            {
                 link: '/faq',
                 label: 'FAQ'
             },
@@ -42,7 +46,7 @@ class Menubar extends Component {
                         }
                     </Nav>
                 </Navbar.Collapse>
-                </Navbar>
+            </Navbar>
         );
     }
 };

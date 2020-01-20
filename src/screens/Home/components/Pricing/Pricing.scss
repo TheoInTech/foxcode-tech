@@ -1,13 +1,19 @@
 @import '../../../../assets/scss/main';
 
 .pricing {
-    margin-top: $spacing * 20;
+    padding-top: $spacing * 10;
     min-height: 890px;
     position: relative;
     overflow: hidden;
     background: url('/images/bg_02.png');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: $spacing * 5;
+
+    @include breakpoint(mobile) {
+        padding-top: $spacing * 3;
+        padding-bottom: $spacing * 3;
+    }
 
     &__content {
         margin-top: $spacing * 6;

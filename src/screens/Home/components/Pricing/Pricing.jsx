@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
+import FCButton from '../../../../components/FCButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import './Pricing.scss';
@@ -50,7 +51,7 @@ class Pricing extends Component {
             },
             {
                 id: 8,
-                label: 'Marketing Subscription',
+                label: 'Online Traffic & Marketing',
                 price: 2500
             },
             {
@@ -94,7 +95,7 @@ class Pricing extends Component {
         const { price, perDay } = this.state;
 
         return (
-            <section className="pricing">
+            <section className="pricing" id="pricing">
                 <Container fluid>
                     <Row>
                         <Col xs="12" className="pricing__statement">
@@ -158,6 +159,9 @@ class Pricing extends Component {
                                                     <FontAwesomeIcon icon={faCheck} /><span>5 static website pages</span>
                                                 </li>
                                                 <li>
+                                                    <FontAwesomeIcon icon={faCheck} /><span>Search engine optimization</span>
+                                                </li>
+                                                <li>
                                                     <FontAwesomeIcon icon={faCheck} /><span>Branding upload</span>
                                                 </li>
                                                 <li>
@@ -187,6 +191,16 @@ class Pricing extends Component {
                                                     <span>Opportunity research and growth</span>
                                                 </li>
                                             </ul>
+                                            <Form className="splash__statement__form">
+                                                <Form.Row>
+                                                    <Col lg="7" sm="12">
+                                                        <Form.Control type="text" placeholder="Email address / Phone number" className="splash__statement__form__input" />
+                                                    </Col>
+                                                    <Col lg="5" sm="12" className="no-margin-padding">
+                                                        <FCButton type="submit" onClick={() => alert('Submitted!')} className="splash__statement__form__button">Get appointment</FCButton>
+                                                    </Col>
+                                                </Form.Row>
+                                            </Form>
                                         </Col>
                                     </Row>
                                 </Card.Body>

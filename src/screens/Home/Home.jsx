@@ -6,6 +6,7 @@ import About from './components/About';
 import Steps from './components/Steps';
 import NumericData from './components/NumericData';
 import Pricing from './components/Pricing';
+import Footer from '../../components/Footer';
 import './Home.scss';
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
             <Steps />
             <NumericData />
             <Pricing />
+            <Footer />
         </main>
     );
 };

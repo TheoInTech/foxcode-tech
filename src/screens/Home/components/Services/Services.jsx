@@ -9,16 +9,18 @@ import './Services.scss';
 
 const Services = () => {
     return (
-        <section className="services">
+        <section className="services" id="services">
             <Container fluid>
                 <Row className="justify-content-center">
                     <Col lg={4} sm={12}>
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
-                                <Image src="https://via.placeholder.com/166x150" alt="Web Development" />
+                                <div class="services__card__body__image">
+                                    <Image src="/images/web-development.svg" alt="Web Development" width="220" />
+                                </div>
                                 <h3 className="services__card__body__title">Website Development</h3>
                                 <p className="services__card__body__description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis porro eos consequuntur tempora ratione.
+                                    Drive more customers to your business and let the world know about it.
                                 </p>
                             </Card.Body>
                         </Card>
@@ -26,10 +28,12 @@ const Services = () => {
                     <Col lg={4} sm={12}>
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
-                                <Image src="https://via.placeholder.com/166x150" alt="Logo &amp; CreativesDesign" />
+                                <div class="services__card__body__image">
+                                    <Image src="/images/logo-design.svg" alt="Logo &amp; CreativesDesign" width="220" />
+                                </div>
                                 <h3 className="services__card__body__title">Logo &amp; Creatives Design</h3>
                                 <p className="services__card__body__description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis porro eos consequuntur tempora ratione.
+                                    Showcase your brand with the help of our creative designers.
                                 </p>
                             </Card.Body>
                         </Card>
@@ -37,10 +41,12 @@ const Services = () => {
                     <Col lg={4} sm={12}>
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
-                                <Image src="https://via.placeholder.com/166x150" alt="Digital Marketing" />
+                                <div class="services__card__body__image">
+                                    <Image src="/images/marketing.svg" alt="Digital Marketing" width="220" />
+                                </div>
                                 <h3 className="services__card__body__title">Digital Marketing</h3>
                                 <p className="services__card__body__description">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis porro eos consequuntur tempora ratione.
+                                    Advertise your services and products with our professional digital marketers.
                                 </p>
                             </Card.Body>
                         </Card>
