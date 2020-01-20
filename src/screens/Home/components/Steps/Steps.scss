@@ -10,6 +10,11 @@
     background: url('/images/bg_04.png');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: $spacing * 20;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 0;
+    }
 
     &__statement {
         padding-top: $spacing * 8;
