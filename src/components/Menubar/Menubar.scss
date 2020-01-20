@@ -4,6 +4,7 @@
     font: $font-menu;
     margin-right: $spacing * 3;
     margin-left: $spacing * 3;
+    min-height: $spacing * 5;
 
     .nav-link {
         color: getColor(fc-gray) !important;
@@ -11,5 +12,9 @@
         &.active {
             color: getColor(fc-orange) !important;
         }
+    }
+
+    &:hover {
+        border-bottom: solid 2px getColor(fc-orange);
     }
 }
