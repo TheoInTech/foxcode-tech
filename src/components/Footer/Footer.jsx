@@ -101,17 +101,12 @@ class Footer extends Component {
                                 <div className="footer__top__info__content">
                                     <div className="footer__top__info__content__item media">
                                         <div className="footer__top__info__content__item media__title">
-                                            <h5><a href="/#">&#9658;&nbsp; Home</a></h5>
-                                        </div>
-                                    </div>
-                                    <div className="footer__top__info__content__item media">
-                                        <div className="footer__top__info__content__item media__title">
                                             <h5><a href="#services">&#9658;&nbsp; Services</a></h5>
                                         </div>
                                     </div>
                                     <div className="footer__top__info__content__item media">
                                         <div className="footer__top__info__content__item media__title">
-                                            <h5><a href="#about-us">&#9658;&nbsp; About us</a></h5>
+                                            <h5><a href="#about-us">&#9658;&nbsp; About Us</a></h5>
                                         </div>
                                     </div>
                                     <div className="footer__top__info__content__item media">
@@ -122,6 +117,26 @@ class Footer extends Component {
                                     <div className="footer__top__info__content__item media">
                                         <div className="footer__top__info__content__item media__title">
                                             <h5><a href="#pricing">&#9658;&nbsp; Pricing</a></h5>
+                                        </div>
+                                    </div>
+                                    <div className="footer__top__info__content__item media">
+                                        <div className="footer__top__info__content__item media__title">
+                                            <h5><a href="/faq">&#9658;&nbsp; FAQ</a></h5>
+                                        </div>
+                                    </div>
+                                    <div className="footer__top__info__content__item media">
+                                        <div className="footer__top__info__content__item media__title">
+                                            <h5><a href="/contact">&#9658;&nbsp; Contact Us</a></h5>
+                                        </div>
+                                    </div>
+                                    <div className="footer__top__info__content__item media">
+                                        <div className="footer__top__info__content__item media__title">
+                                            <h5><a href="/privacy">&#9658;&nbsp; Privacy Policy</a></h5>
+                                        </div>
+                                    </div>
+                                    <div className="footer__top__info__content__item media">
+                                        <div className="footer__top__info__content__item media__title">
+                                            <h5><a href="/terms">&#9658;&nbsp; Terms &amp; Conditions</a></h5>
                                         </div>
                                     </div>
                                 </div>
