@@ -27,7 +27,7 @@ const Steps = () => {
                         </div>
                         <h3 className="steps__process__title">Planning</h3>
                         <p className="steps__process__description">
-                            Help us understand your business, ideas and goals
+                            Help us understand your business, ideas and goals.
                         </p>
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
@@ -36,25 +36,25 @@ const Steps = () => {
                         </div>
                         <h3 className="steps__process__title">Development</h3>
                         <p className="steps__process__description">
-                            We will start putting your amazing ideas into reality
+                            We will start putting your amazing ideas into reality.
                         </p>
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
                         <div class="steps__process__image">
                             <Image src="/images/step-03.svg" alt="Development" width="250" />
                         </div>
-                        <h3 className="steps__process__title">Development</h3>
+                        <h3 className="steps__process__title">Consultation</h3>
                         <p className="steps__process__description">
-                            We will start putting your amazing ideas into reality
+                            You will be able to check our work before going live. If everything is okay, we will deploy it at once.
                         </p>
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
                         <div class="steps__process__image">
                             <Image src="/images/step-04.svg" alt="Development" width="250" />
                         </div>
-                        <h3 className="steps__process__title">Development</h3>
+                        <h3 className="steps__process__title">Marketing</h3>
                         <p className="steps__process__description">
-                            We will start putting your amazing ideas into reality
+                            The rest is up to us. If you subscribed to our marketing, we will drive traffic to your website.
                         </p>
                     </Col>
                 </Row>
