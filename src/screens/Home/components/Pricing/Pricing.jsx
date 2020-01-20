@@ -156,6 +156,9 @@ class Pricing extends Component {
                                                     <FontAwesomeIcon icon={faCheck} /><span>Website hosting and security</span>
                                                 </li>
                                                 <li>
+                                                    <FontAwesomeIcon icon={faCheck} /><span>Google analytics</span>
+                                                </li>
+                                                <li>
                                                     <FontAwesomeIcon icon={faCheck} /><span>5 static website pages</span>
                                                 </li>
                                                 <li>
