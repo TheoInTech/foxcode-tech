@@ -24,7 +24,7 @@ const Faq = () => {
             a: 'Nope! We work with clients all over the world. Our whole team works remotely, allowing us to find the absolute best team for our business.'
         },
         {
-            q: 'Do I have to be around to work with you?',
+            q: 'Will I be able to update the site myself when it’s finished?',
             a: 'We don\'t want you to do the hassle things. Just subscribe to our website updates addon and we\'ll take it from there. We also have monthly maintenance if there are issues encoutered or bug fixes that needs to be solved. Terms and conditions apply.'
         },
         {
