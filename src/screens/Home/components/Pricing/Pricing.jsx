@@ -251,7 +251,7 @@ class Pricing extends Component {
                                                 <Form className="splash__statement__form" onSubmit={this.getAppointment}>
                                                     <Form.Row>
                                                         <Col lg="7" sm="12">
-                                                            <Form.Control type="text" name="contact" placeholder="Email address / Phone number" className="splash__statement__form__input" />
+                                                            <Form.Control type="text" name="contact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
                                                         </Col>
                                                         <Col lg="5" sm="12">
                                                             <FCButton type="submit" className="splash__statement__form__button">Get appointment</FCButton>

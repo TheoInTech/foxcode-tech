@@ -10,6 +10,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include breakpoint(mobile) {
+        padding-top: $spacing * 2;
+    }
+
     &__statement {
         padding-top: $spacing * 12;
 
