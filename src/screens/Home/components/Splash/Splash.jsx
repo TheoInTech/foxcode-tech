@@ -55,7 +55,7 @@ class Splash extends Component {
                             <Col lg="6" xs="12" className="splash__statement">
                                 <h1 className="splash__statement__title">Trust us.<br/>You <span className="text-emphasis">definitely</span><br/> need a website.</h1>
                                 <p className="subtitle">Revenue-driven one's. Not just some Facebook page. *ugh*</p>
-                                <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true">
+                                <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true" name="formSplash">
                                     <Form.Row>
                                         <Col lg="7" sm="12">
                                             <Form.Control type="text" name="contact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
