@@ -248,7 +248,7 @@ class Pricing extends Component {
                                                         <span>Opportunity research and growth</span>
                                                     </li>
                                                 </ul>
-                                                <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true" name="formPricing">
+                                                <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true" name="formPricing"  id="formPricing">
                                                     <Form.Row>
                                                         <Col lg="7" sm="12">
                                                             <Form.Control type="text" name="contact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
