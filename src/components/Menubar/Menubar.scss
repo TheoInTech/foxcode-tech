@@ -2,6 +2,11 @@
 
 .navbar {
     box-shadow: 0 0 15px getColor(fc-light-gray);
+    
+    @include breakpoint(mobile) {
+        padding-right: $spacing * 2 !important;
+        padding-left: $spacing * 2 !important;
+    }
 }
 
 .navbar-brand {
