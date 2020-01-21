@@ -14,16 +14,17 @@ const About = () => {
                         <h3 className="section-title">About Fox Code</h3>
                         <h2 className="title">
                             We'll develop your websites <span className="text-emphasis">intelligently.</span> Why?<br/>
-                            Because this is how we make a living.<br/>
+                            Because this is what your business needs.<br/>
                         </h2>
                         <p className="subtitle">
-                            Here at <span className="text-emphasis">Fox Code</span>, we understand your needs and how hard it is to start your website, acquire customers and finally earn money.
+                            Here at <span className="text-emphasis">Fox Code</span>, we understand the challenges that come with your business.
                         </p>
                         <p className="subtitle">
-                            That's the reason why we're here!
+                            We're here to help.
                         </p>
                         <p className="subtitle">
-                            Why develop a fully customized website from scratch when you can <span className="text-emphasis">rent</span> yours now?
+                            Don't waste money building a page or website that won't generate money.<br/>
+                            Talk to us now!
                         </p>
                     </Col>
                     <Col lg="6" xs="12" className="about__image no-margin-padding">

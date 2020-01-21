@@ -15,7 +15,7 @@ const Services = () => {
                     <Col lg={4} sm={12}>
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
-                                <div class="services__card__body__image">
+                                <div className="services__card__body__image">
                                     <Image src="/images/web-development.svg" alt="Web Development" width="220" />
                                 </div>
                                 <h3 className="services__card__body__title">Website Development</h3>
@@ -28,7 +28,7 @@ const Services = () => {
                     <Col lg={4} sm={12}>
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
-                                <div class="services__card__body__image">
+                                <div className="services__card__body__image">
                                     <Image src="/images/logo-design.svg" alt="Logo &amp; CreativesDesign" width="220" />
                                 </div>
                                 <h3 className="services__card__body__title">Logo &amp; Creatives Design</h3>
@@ -41,7 +41,7 @@ const Services = () => {
                     <Col lg={4} sm={12}>
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
-                                <div class="services__card__body__image">
+                                <div className="services__card__body__image">
                                     <Image src="/images/marketing.svg" alt="Digital Marketing" width="220" />
                                 </div>
                                 <h3 className="services__card__body__title">Digital Marketing</h3>

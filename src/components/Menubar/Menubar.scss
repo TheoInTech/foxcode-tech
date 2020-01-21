@@ -1,5 +1,13 @@
 @import '../../assets/scss/main';
 
+.navbar {
+    box-shadow: 0 0 15px getColor(fc-light-gray);
+}
+
+.navbar-brand {
+    height: 90px;
+}
+
 .nav-item {
     font: $font-menu;
     margin-right: $spacing * 3;

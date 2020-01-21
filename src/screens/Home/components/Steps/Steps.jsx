@@ -22,7 +22,7 @@ const Steps = () => {
                 </Row>
                 <Row className="steps__process">
                     <Col lg="3" xs="12" className="steps__process__wrapper">
-                        <div class="steps__process__image">
+                        <div className="steps__process__image">
                             <Image src="/images/step-01.svg" alt="Planning" width="250" />
                         </div>
                         <h3 className="steps__process__title">Planning</h3>
@@ -31,7 +31,7 @@ const Steps = () => {
                         </p>
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
-                        <div class="steps__process__image">
+                        <div className="steps__process__image">
                             <Image src="/images/step-02.svg" alt="Development" width="250" />
                         </div>
                         <h3 className="steps__process__title">Development</h3>
@@ -40,7 +40,7 @@ const Steps = () => {
                         </p>
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
-                        <div class="steps__process__image">
+                        <div className="steps__process__image">
                             <Image src="/images/step-03.svg" alt="Development" width="250" />
                         </div>
                         <h3 className="steps__process__title">Consultation</h3>
@@ -49,7 +49,7 @@ const Steps = () => {
                         </p>
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
-                        <div class="steps__process__image">
+                        <div className="steps__process__image">
                             <Image src="/images/step-04.svg" alt="Development" width="250" />
                         </div>
                         <h3 className="steps__process__title">Marketing</h3>

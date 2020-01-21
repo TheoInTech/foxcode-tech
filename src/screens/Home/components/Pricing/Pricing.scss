@@ -37,7 +37,7 @@
     }
 
     &__addons {
-        font-size: 21px;
+        font-size: 16px;
 
         @include breakpoint(mobile) {
             font-size: 14px;
@@ -70,6 +70,7 @@
                     color: getColor(fc-black);
                     font-weight: 700;
                     transition: .3s linear;
+                    line-height: 1.2;
     
                     &:hover {
                         color: getColor(fc-orange);

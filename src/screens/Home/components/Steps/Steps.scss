@@ -3,6 +3,7 @@
 .steps {
     margin-top: $spacing * 5;
     padding-top: $spacing * 10;
+    padding-bottom: $spacing * 20;
     min-height: 890px;
     position: relative;
     overflow: hidden;
@@ -10,14 +11,10 @@
     background: url('/images/bg_04.png');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: $spacing * 20;
-
-    @include breakpoint(mobile) {
-        margin-bottom: 0;
-    }
 
     &__statement {
         padding-top: $spacing * 8;
+        padding-bottom: $spacing * 4;
     }
 
     &__process {

@@ -40,8 +40,8 @@ class Menubar extends Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-end flex-1" defaultActiveKey="/" activeKey={active}>
                         {
-                            this.navs.map(nav => 
-                                <Nav.Item>
+                            this.navs.map((nav, i) => 
+                                <Nav.Item key={`nav-${i}`}>
                                     <Nav.Link href={nav.link}>{nav.label}</Nav.Link>
                                 </Nav.Item>
                             )
