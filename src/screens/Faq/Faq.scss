@@ -3,15 +3,45 @@
 .faq {
     margin-top: $spacing * 5;
     padding-top: $spacing * 10;
+    padding-bottom: $spacing * 10;
     min-height: 890px;
     position: relative;
     overflow: hidden;
-    text-align: center;
     background: url('/images/bg_01.png');
     background-size: cover;
     background-repeat: no-repeat;
 
     &__header {
         padding-top: $spacing * 8;
+        padding-bottom: $spacing * 8;
+        text-align: center;
+    }
+
+    &__body {
+        &__card {
+            margin-bottom: $spacing * 2;
+        }
+
+        &__button {
+            padding: 0;
+            text-align: left;
+            color: getColor(fc-black);
+            background: getColor(white);
+            font-weight: 700;
+            font-size: 18px;
+            border: none;
+            box-shadow: none;
+
+            &:hover, &:focus {
+                background: getColor(fc-light-orange);
+                color: getColor(fc-orange);
+                text-decoration: none;
+            }
+        }
+
+        &__content {
+            font-size: 18px;
+            line-height: 1.625;
+        }
     }
 }

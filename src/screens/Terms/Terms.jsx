@@ -13,8 +13,8 @@ const Terms = () => {
             <main className="main">
                 <section className="terms" id="terms">
                     <Container fluid>
-                        <Row>
-                            <Col xs="12" className="terms__header">
+                        <Row  className="terms__header">
+                            <Col xs="12">
                                 <h2 className="title">
                                     Terms &amp; Conditions
                                 </h2>
@@ -28,8 +28,8 @@ const Terms = () => {
                                 </ul>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
+                        <Row  className="terms__body">
+                            <Col xs="12">
                                 <p>These terms and conditions outline the rules and regulations for the use of Fox Code Tech Solutions's Website, located at https://foxcode.tech.</p>
 
                                 <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Fox Code Tech Solutions if you do not agree to take all of the terms and conditions stated on this page.</p>

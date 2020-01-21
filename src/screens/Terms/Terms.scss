@@ -6,12 +6,15 @@
     min-height: 890px;
     position: relative;
     overflow: hidden;
-    text-align: center;
-    background: url('/images/bg_03.png');
-    background-size: cover;
-    background-repeat: no-repeat;
 
     &__header {
         padding-top: $spacing * 8;
+        padding-bottom: $spacing * 8;
+        text-align: center;
+    }
+
+    &__body {
+        padding-bottom: $spacing * 8;
+        font-size: 16px;
     }
 }

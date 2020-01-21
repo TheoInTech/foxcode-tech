@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import FCButton from '../../../../components/FCButton';
 import FCToast from '../../../../components/FCToast';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faThumbsUp, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 import emailjs from 'emailjs-com';
 import './Pricing.scss';
 
@@ -118,7 +118,7 @@ class Pricing extends Component {
         const form = event.target;
         const { price, perDay, addons } = this.state;
         
-        emailjs.send('smtp_server', 'template_jd77N42V', { 
+        emailjs.send('smtp_server', 'template-home-page', { 
             contact: form.elements.contact.value,
             date: new Date(),
             page: 'Pricing',
@@ -131,7 +131,6 @@ class Pricing extends Component {
                 form.elements.contact.value = '';
             }, error => {
                 this.setState({ showToast: true, success: false })
-                form.elements.contact.value = '';
             }
         );
     }
@@ -144,7 +143,7 @@ class Pricing extends Component {
                 {
                     success === true ?
                         <FCToast icon={faThumbsUp} title="Thank you!" message="If you don't hear from us in the next 24 hours, please send us a message at info@foxcode.tech" show={showToast} />
-                        : <FCToast icon={faThumbsDown} title="Sorry!" message="Something went wrong. Please try again." show={showToast} />
+                        : <FCToast icon={faExclamationTriangle} title="Sorry!" message="Something went wrong. Please try again." show={showToast} />
                 }
                 <section className="pricing" id="pricing">
                     <Container fluid>
@@ -254,7 +253,7 @@ class Pricing extends Component {
                                                         <Col lg="7" sm="12">
                                                             <Form.Control type="text" name="contact" placeholder="Email address / Phone number" className="splash__statement__form__input" />
                                                         </Col>
-                                                        <Col lg="5" sm="12" className="no-margin-padding">
+                                                        <Col lg="5" sm="12">
                                                             <FCButton type="submit" className="splash__statement__form__button">Get appointment</FCButton>
                                                         </Col>
                                                     </Form.Row>

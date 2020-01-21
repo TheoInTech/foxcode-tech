@@ -216,3 +216,19 @@ nav, section, footer {
         }
     }
 }
+
+input, textarea {
+    &:focus {
+        outline: none;
+        border-color: getColor(fc-orange) !important;
+        box-shadow: 0 0 2px getColor(fc-orange) !important;
+    }
+}
+
+input {
+    padding: 24px 16px !important;
+}
+
+textarea {
+    padding: 16px !important;
+}

@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 import FCToast from '../../../../components/FCToast';
 import FCButton from '../../../../components/FCButton';
 import emailjs from 'emailjs-com';
-import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons'
+import { faThumbsUp, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 import './Splash.scss';
 
 class Splash extends Component {
@@ -26,7 +26,7 @@ class Splash extends Component {
         event.preventDefault();
         const form = event.target;
         
-        emailjs.send('smtp_server', 'template_jd77N42V', { 
+        emailjs.send('smtp_server', 'template-home-page', { 
             contact: form.elements.contact.value,
             date: new Date(),
             page: 'Splash'
@@ -36,7 +36,6 @@ class Splash extends Component {
                 form.elements.contact.value = '';
             }, error => {
                 this.setState({ showToast: true, success: false })
-                form.elements.contact.value = '';
             }
         );
     }
@@ -48,7 +47,7 @@ class Splash extends Component {
                 {
                     success === true ?
                         <FCToast icon={faThumbsUp} title="Thank you!" message="If you don't hear from us in the next 24 hours, please send us a message at info@foxcode.tech" show={showToast} />
-                        : <FCToast icon={faThumbsDown} title="Sorry!" message="Something went wrong. Please try again." show={showToast} />
+                        : <FCToast icon={faExclamationTriangle} title="Sorry!" message="Something went wrong. Please try again." show={showToast} />
                 }
                 <section className="splash">
                     <Container fluid>
@@ -61,7 +60,7 @@ class Splash extends Component {
                                         <Col lg="7" sm="12">
                                             <Form.Control type="text" name="contact" placeholder="Email address / Phone number" className="splash__statement__form__input" />
                                         </Col>
-                                        <Col lg="5" sm="12" className="no-margin-padding">
+                                        <Col lg="5" sm="12">
                                             <FCButton type="submit" className="splash__statement__form__button">Get appointment</FCButton>
                                         </Col>
                                     </Form.Row>

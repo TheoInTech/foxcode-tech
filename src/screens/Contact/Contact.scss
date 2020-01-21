@@ -6,12 +6,85 @@
     min-height: 890px;
     position: relative;
     overflow: hidden;
-    text-align: center;
-    background: url('/images/bg_03.png');
+    background: url('/images/bg_01.png');
     background-size: cover;
     background-repeat: no-repeat;
 
     &__header {
         padding-top: $spacing * 8;
+        padding-bottom: $spacing * 8;
+        text-align: center;
+    }
+
+    &__body {
+        
+        @include breakpoint(mobile) {
+            > .info, > .message {
+                padding-bottom: $spacing * 5;
+            }
+        }
+
+        &__title {
+            > h3 {
+                font-size: 26px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+
+            > p {
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &__info {
+            padding-left: 0px;
+
+            > li {
+                list-style: none;
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-bottom: $spacing * 4;
+            }
+
+            &__icon {
+                margin-right: $spacing * 4;
+                font-size: $spacing * 4;
+                color: getColor(fc-orange);
+            }
+
+            &__title {
+                justify-content: flex-start;
+                align-items: baseline;
+
+                > h4 {
+                    margin-bottom: $spacing !important;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                    font-size: 18px;
+                    color: getColor(fc-black);
+                }
+
+                > p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__form {
+            &__input {
+                margin-bottom: 12px;
+
+                &.textarea {
+                    resize: none;
+                }
+            }
+
+            &__button {
+                margin-top: $spacing * 2;
+                float: right;
+            }
+        }
     }
 }
