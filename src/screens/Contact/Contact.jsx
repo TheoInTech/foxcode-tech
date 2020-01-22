@@ -140,7 +140,7 @@ class Contact extends Component {
                                         <p>So busy setting up your business? You can leave us a message instead.</p>
                                     </div>
                                     <div className="contact__body__form">
-                                        <Form onSubmit={this.getAppointment} action="/contact" data-netlify="true" name="formContact" id="formContact" method="POST" enctype="application/x-www-form-urlencoded">
+                                        <Form onSubmit={this.getAppointment} action="https://www.foxcode.tech/contact" data-netlify="true" name="formContact" id="formContact" method="POST" enctype="application/x-www-form-urlencoded">
                                             <Form.Row>
                                                 <Col lg="6" sm="12">
                                                     <Form.Control type="text" name="name" placeholder="Name" className="contact__body__form__input" required />
