@@ -23,6 +23,7 @@ class Splash extends Component {
     }
 
     getAppointment(event) {
+        event.preventDefault();
         const form = event.target;
         
         emailjs.send('smtp_server', 'template-home-page', { 
@@ -54,7 +55,7 @@ class Splash extends Component {
                             <Col lg="6" xs="12" className="splash__statement">
                                 <h1 className="splash__statement__title">Trust us.<br/>You <span className="text-emphasis">definitely</span><br/> need a website.</h1>
                                 <p className="subtitle">Revenue-driven one's. Not just some Facebook page. *ugh*</p>
-                                <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true" name="formSplash" id="formSplash" method="POST" enctype="application/x-www-form-urlencoded" action="https://www.foxcode.tech/">
+                                <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true" name="formSplash" id="formSplash" method="POST" enctype="application/x-www-form-urlencoded">
                                     <Form.Row>
                                         <Col lg="7" sm="12">
                                             <Form.Control type="text" name="splashContact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
