@@ -119,7 +119,7 @@ class Pricing extends Component {
         const { price, perDay, addons } = this.state;
         
         emailjs.send('smtp_server', 'template-home-page', { 
-            contact: form.elements.contact.value,
+            contact: form.elements.pricingContact.value,
             date: new Date(),
             page: 'Pricing',
             monthly: `PHP ${price}`,
@@ -128,7 +128,7 @@ class Pricing extends Component {
         }, 'user_5bruZPr5cuoqyBYpIWpAY')
             .then(response => {
                 this.setState({ showToast: true, success: true })
-                form.elements.contact.value = '';
+                form.elements.pricingContact.value = '';
             }, error => {
                 this.setState({ showToast: true, success: false })
             }
@@ -248,13 +248,13 @@ class Pricing extends Component {
                                                         <span>Opportunity research and growth</span>
                                                     </li>
                                                 </ul>
-                                                <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true" name="formPricing"  id="formPricing">
+                                                <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true" name="formPricing" id="formPricing">
                                                     <Form.Row>
                                                         <Col lg="7" sm="12">
-                                                            <Form.Control type="text" name="contact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
+                                                            <Form.Control type="text" name="pricingContact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
                                                         </Col>
                                                         <Col lg="5" sm="12">
-                                                            <FCButton type="submit" className="splash__statement__form__button">Get appointment</FCButton>
+                                                            <FCButton type="submit" name="pricingButton" className="splash__statement__form__button">Get appointment</FCButton>
                                                         </Col>
                                                     </Form.Row>
                                                 </Form>

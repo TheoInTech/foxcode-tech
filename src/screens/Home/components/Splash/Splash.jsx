@@ -27,13 +27,13 @@ class Splash extends Component {
         const form = event.target;
         
         emailjs.send('smtp_server', 'template-home-page', { 
-            contact: form.elements.contact.value,
+            contact: form.elements.splashContact.value,
             date: new Date(),
             page: 'Splash'
         }, 'user_5bruZPr5cuoqyBYpIWpAY')
             .then(response => {
                 this.setState({ showToast: true, success: true })
-                form.elements.contact.value = '';
+                form.elements.splashContact.value = '';
             }, error => {
                 this.setState({ showToast: true, success: false })
             }
@@ -58,10 +58,10 @@ class Splash extends Component {
                                 <Form className="splash__statement__form" onSubmit={this.getAppointment} data-netlify="true" name="formSplash" id="formSplash">
                                     <Form.Row>
                                         <Col lg="7" sm="12">
-                                            <Form.Control type="text" name="contact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
+                                            <Form.Control type="text" name="splashContact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
                                         </Col>
                                         <Col lg="5" sm="12">
-                                            <FCButton type="submit" className="splash__statement__form__button">Get appointment</FCButton>
+                                            <FCButton type="submit" name="splashButton" className="splash__statement__form__button">Get appointment</FCButton>
                                         </Col>
                                     </Form.Row>
                                 </Form>
