@@ -114,7 +114,6 @@ class Pricing extends Component {
     }
 
     getAppointment(event) {
-        event.preventDefault();
         const form = event.target;
         const { price, perDay, addons } = this.state;
         

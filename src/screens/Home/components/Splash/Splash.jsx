@@ -23,7 +23,6 @@ class Splash extends Component {
     }
 
     getAppointment(event) {
-        event.preventDefault();
         const form = event.target;
         
         emailjs.send('smtp_server', 'template-home-page', { 
