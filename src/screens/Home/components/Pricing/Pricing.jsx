@@ -185,7 +185,7 @@ class Pricing extends Component {
                                 <Card className="pricing__summary__card">
                                     <Card.Body className="pricing__summary__card__body">
                                         <h3 className="pricing__summary__card__body__title">
-                                            Get your website for as low as
+                                            Get your website for<br />as low as
                                         </h3>
                                         <h3 className="pricing__summary__card__body__cost">
                                             &#8369;{perDay.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}

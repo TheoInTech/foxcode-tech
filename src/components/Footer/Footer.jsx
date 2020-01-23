@@ -162,7 +162,7 @@ class Footer extends Component {
                         <Row>
                             <Col lg="12" sm="12">
                                 <span className="footer__bottom__copyright">
-                                    Fox Code Tech Solutions &#9400; Copyright 2020. All rights reserved.
+                                    Fox Code Tech Solutions &#9400; Copyright {new Date().getFullYear()}. All rights reserved.
                                 </span>
                             </Col>
                         </Row>
