@@ -93,7 +93,7 @@ class Contact extends Component {
                                             </div>
                                             <div className="contact__body__info__title">
                                                 <h4>Office Location</h4>
-                                                <p>Drive more customers to your business and let the world know about it.</p>
+                                                <p>Balagtas, Bulacan 3016, Philippines</p>
                                             </div>
                                         </li>
                                         <li>

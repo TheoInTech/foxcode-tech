@@ -14,8 +14,8 @@ const Home = () => {
         <main className="main">
             <Menubar />
             <Splash />
-            <Services />
             <About />
+            <Services />
             <Steps />
             <NumericData />
             <Pricing />

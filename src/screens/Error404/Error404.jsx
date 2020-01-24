@@ -14,9 +14,8 @@ const Error404 = () => {
                         <Col lg="12">
                             <Image src="/logo.png" alt="Fox Code Tech Solutions" className="logo"/>
                             <h1 className="description">
-                                Ooops...<br />
-                                Are you lost, little foxy?<br />
-                                Let me guide you to our <a href="/">home</a>
+                                Oh no! Are you lost, little foxy?<br />
+                                Let me guide you <a href="/" className="text-emphasis">back home</a>
                             </h1>
                         </Col>
                     </Row>

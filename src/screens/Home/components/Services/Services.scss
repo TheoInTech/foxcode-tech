@@ -9,6 +9,7 @@
     background: url('/images/bg_02.png');
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: $spacing * 10;
 
     &__card {
         border: none;
@@ -52,5 +53,10 @@
 
     @include breakpoint(mobile) {
         margin-top: $spacing * 5;
+    }
+
+    &__statement {
+        padding-top: $spacing * 8;
+        text-align: center;
     }
 }

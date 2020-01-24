@@ -52,6 +52,11 @@ const Services = () => {
                         </Card>
                     </Col>
                 </Row>
+                <Row>
+                    <Col xs="12" className="services__statement">
+                        <h3 className="section-title">And many more!</h3>
+                    </Col>
+                </Row>
             </Container>
         </section>
     );

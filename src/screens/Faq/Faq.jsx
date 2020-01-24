@@ -12,6 +12,10 @@ import './Faq.scss';
 const Faq = () => {
     const qa = [
         {
+            q: 'What makes Fox Code Tech Solutions different from other website development companies?',
+            a: 'First of all, we DO work intelligently and straightforward to help you get started with your online presence. No flowery words and marketing strategies to get you on board. Also, our business model is subscribtion-based. You can just rent out your custom website with us and we\'ll handle the rest. No pressure and stress. Instead of buying your custom website, handle maintenance, stress about hosting, making it to the top search, marketing, analytics and everything!'
+        },
+        {
             q: 'How much does a new website cost?',
             a: 'There’s not one single answer to this question. A website design is quoted based on the needs of each individual project. Every website is unique and requires different components; we design and develop custom websites specifically for your small business. We’ll ask a lot of questions, assess your needs, and give you a quote based on that assessment. Our base price starts at only P1,500 per month and may go up to P10,000 with all the addon features to boost your business to the highest peak possible - Sky is the limit!'
         },
