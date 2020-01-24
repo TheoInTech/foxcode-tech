@@ -12,7 +12,7 @@ const Error404 = () => {
                 <Container fluid>
                     <Row className="error-wrapper">
                         <Col lg="12">
-                            <Image src="/logo.png" alt="Fox Code Tech Solutions" title="Fox Code Tech Solutions" className="logo"/>
+                            <Image src="/logo.png" alt="Fox Code Tech Solutions" title="Fox Code Tech Solutions" className="logo" width="270" />
                             <h1 className="description">
                                 Oh no! Are you lost, little foxy?<br />
                                 Let me guide you <a href="/" className="text-emphasis" title="home">back home</a>
