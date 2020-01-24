@@ -23,7 +23,7 @@ const Steps = () => {
                 <Row className="steps__process">
                     <Col lg="3" xs="12" className="steps__process__wrapper">
                         <div className="steps__process__image">
-                            <Image src="/images/step-01.svg" alt="Planning" width="250" />
+                            <Image src="/images/step-01.svg" alt="Planning" title="Planning" width="250" />
                         </div>
                         <h3 className="steps__process__title">Planning</h3>
                         <p className="steps__process__description">
@@ -32,7 +32,7 @@ const Steps = () => {
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
                         <div className="steps__process__image">
-                            <Image src="/images/step-02.svg" alt="Development" width="250" />
+                            <Image src="/images/step-02.svg" alt="Development" title="Development" width="250" />
                         </div>
                         <h3 className="steps__process__title">Development</h3>
                         <p className="steps__process__description">
@@ -41,7 +41,7 @@ const Steps = () => {
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
                         <div className="steps__process__image">
-                            <Image src="/images/step-03.svg" alt="Development" width="250" />
+                            <Image src="/images/step-03.svg" alt="Consultation" title="Consultation" width="250" />
                         </div>
                         <h3 className="steps__process__title">Consultation</h3>
                         <p className="steps__process__description">
@@ -50,7 +50,7 @@ const Steps = () => {
                     </Col>
                     <Col lg="3" xs="12" className="steps__process__wrapper">
                         <div className="steps__process__image">
-                            <Image src="/images/step-04.svg" alt="Development" width="250" />
+                            <Image src="/images/step-04.svg" alt="Marketing" title="Marketing" width="250" />
                         </div>
                         <h3 className="steps__process__title">Marketing</h3>
                         <p className="steps__process__description">

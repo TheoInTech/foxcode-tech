@@ -61,7 +61,7 @@ const Faq = () => {
                                 </h2>
                                 <ul className="breadcrumbs">
                                     <li>
-                                        <a href="/">Home</a>
+                                        <a href="/" title="home">Home</a>
                                     </li>
                                     <li>
                                         FAQ

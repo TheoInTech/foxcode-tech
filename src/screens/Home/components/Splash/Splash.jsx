@@ -67,7 +67,7 @@ class Splash extends Component {
                                 </Form>
                             </Col>
                             <Col lg="6" xs="12" className="splash__image">
-                                <Image src="/images/splash.svg" width="100%" />
+                                <Image src="/images/splash.svg" width="100%" alt="Splash BG" title="Splash BG" />
                             </Col>
                         </Row>
                     </Container>

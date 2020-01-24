@@ -13,19 +13,23 @@ class Menubar extends Component {
         this.navs = [
             {
                 link: '/',
-                label: 'Home'
+                label: 'Home',
+                title: 'home'
             },
             {
                 link: '/#pricing',
-                label: 'Pricing'
+                label: 'Pricing',
+                title: 'pricing'
             },
             {
                 link: '/faq',
-                label: 'FAQ'
+                label: 'FAQ',
+                title: 'faq'
             },
             {
                 link: '/contact',
-                label: 'Contact Us'
+                label: 'Contact Us',
+                title: 'contact'
             }
         ]
     }
@@ -35,14 +39,14 @@ class Menubar extends Component {
 
         return (
             <Navbar bg="white" expand="lg" fixed="top">
-                <Navbar.Brand href="/"><Image src="/logo.png" width="90" /></Navbar.Brand>
+                <Navbar.Brand href="/" title="home"><Image src="/logo.png" width="90" alt="Fox Code Tech Solutions" title="Fox Code Tech Solutions"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="justify-content-end flex-1" defaultActiveKey="/" activeKey={active}>
                         {
                             this.navs.map((nav, i) => 
                                 <Nav.Item key={`nav-${i}`}>
-                                    <Nav.Link href={nav.link}>{nav.label}</Nav.Link>
+                                    <Nav.Link href={nav.link} title={nav.title}>{nav.label}</Nav.Link>
                                 </Nav.Item>
                             )
                         }

@@ -28,7 +28,7 @@ const About = () => {
                         </p>
                     </Col>
                     <Col lg="6" xs="12" className="about__image no-margin-padding">
-                        <Image src="/images/about.png" width="100%" />
+                        <Image src="/images/about.png" width="100%" alt="About BG" title="About BG" />
                     </Col>
                 </Row>
             </Container>

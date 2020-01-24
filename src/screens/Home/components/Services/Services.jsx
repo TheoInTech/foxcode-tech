@@ -16,7 +16,7 @@ const Services = () => {
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
                                 <div className="services__card__body__image">
-                                    <Image src="/images/web-development.svg" alt="Web Development" width="220" />
+                                    <Image src="/images/web-development.svg" alt="Web Development" title="Web Development" width="220" />
                                 </div>
                                 <h3 className="services__card__body__title">Website Development</h3>
                                 <p className="services__card__body__description">
@@ -29,7 +29,7 @@ const Services = () => {
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
                                 <div className="services__card__body__image">
-                                    <Image src="/images/logo-design.svg" alt="Logo &amp; CreativesDesign" width="220" />
+                                    <Image src="/images/logo-design.svg" alt="Logo &amp; CreativesDesign" title="Logo &amp; CreativesDesign" width="220" />
                                 </div>
                                 <h3 className="services__card__body__title">Logo &amp; Creatives Design</h3>
                                 <p className="services__card__body__description">
@@ -42,7 +42,7 @@ const Services = () => {
                         <Card className="services__card">
                             <Card.Body className="services__card__body">
                                 <div className="services__card__body__image">
-                                    <Image src="/images/marketing.svg" alt="Digital Marketing" width="220" />
+                                    <Image src="/images/marketing.svg" alt="Digital Marketing" title="Digital Marketing" width="220" />
                                 </div>
                                 <h3 className="services__card__body__title">Digital Marketing</h3>
                                 <p className="services__card__body__description">
