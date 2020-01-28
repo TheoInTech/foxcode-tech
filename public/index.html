@@ -11,39 +11,6 @@
       gtag('config', 'UA-155536671-1');
     </script>
 
-    <!-- Messenger Integration -->
-    <script>
-      var div = document.createElement('div');
-      div.className = 'fb-customerchat';
-      div.setAttribute('page_id', '104909511047355');
-      div.setAttribute('ref', 'b64:bGl2ZS1jaGF0');
-      document.body.appendChild(div);
-      window.fbMessengerPlugins = window.fbMessengerPlugins || {
-        init: function () {
-          FB.init({
-            appId            : '1678638095724206',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v3.3'
-          });
-        }, callable: []
-      };
-      window.fbAsyncInit = window.fbAsyncInit || function () {
-        window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
-        window.fbMessengerPlugins.init();
-      };
-      setTimeout(function () {
-        (function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) { return; }
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      }, 0);
-    </script>
-
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -87,5 +54,38 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- Messenger Integration -->
+    <script>
+      var div = document.createElement('div');
+      div.className = 'fb-customerchat';
+      div.setAttribute('page_id', '104909511047355');
+      div.setAttribute('ref', 'b64:bGl2ZS1jaGF0');
+      document.body.appendChild(div);
+      window.fbMessengerPlugins = window.fbMessengerPlugins || {
+        init: function () {
+          FB.init({
+            appId            : '1678638095724206',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v3.3'
+          });
+        }, callable: []
+      };
+      window.fbAsyncInit = window.fbAsyncInit || function () {
+        window.fbMessengerPlugins.callable.forEach(function (item) { item(); });
+        window.fbMessengerPlugins.init();
+      };
+      setTimeout(function () {
+        (function (d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) { return; }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      }, 0);
+    </script>
   </body>
 </html>
