@@ -5,7 +5,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Steps from './components/Steps';
 import NumericData from './components/NumericData';
-import Pricing from './components/Pricing';
+// import Pricing from './components/Pricing';
 import Footer from '../../components/Footer';
 import './Home.scss';
 
@@ -16,9 +16,9 @@ const Home = () => {
             <Splash />
             <About />
             <Services />
-            <Steps />
             <NumericData />
-            <Pricing />
+            <Steps />
+            {/* <Pricing /> */}
             <Footer />
         </main>
     );

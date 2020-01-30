@@ -91,11 +91,6 @@ const Footer = () => {
                                 </div>
                                 <div className="footer__top__info__content__item media">
                                     <div className="footer__top__info__content__item media__title">
-                                        <h5><a href="#pricing"title="pricing">&#9658;&nbsp; Pricing</a></h5>
-                                    </div>
-                                </div>
-                                <div className="footer__top__info__content__item media">
-                                    <div className="footer__top__info__content__item media__title">
                                         <h5><a href="/faq" title="faq">&#9658;&nbsp; FAQ</a></h5>
                                     </div>
                                 </div>

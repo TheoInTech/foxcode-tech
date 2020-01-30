@@ -17,9 +17,9 @@ class Menubar extends Component {
                 title: 'home'
             },
             {
-                link: '/#pricing',
-                label: 'Pricing',
-                title: 'pricing'
+                link: '/#services',
+                label: 'Services',
+                title: 'services'
             },
             {
                 link: '/faq',

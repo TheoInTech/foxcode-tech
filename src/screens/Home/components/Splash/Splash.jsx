@@ -61,7 +61,7 @@ class Splash extends Component {
                                             <Form.Control type="text" name="splashContact" placeholder="Email address / Phone number" className="splash__statement__form__input" required />
                                         </Col>
                                         <Col lg="5" sm="12">
-                                            <FCButton type="submit" name="splashButton" className="splash__statement__form__button">Get appointment</FCButton>
+                                            <FCButton type="submit" name="splashButton" className="splash__statement__form__button">Get Quote</FCButton>
                                         </Col>
                                     </Form.Row>
                                 </Form>
