@@ -1,70 +1,68 @@
-@import '../../../../assets/scss/main';
+@import "../../../../assets/scss/main";
 
 .services {
-    min-height: 560px;
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 90px;
-    padding-top: 140px;
-    background: url('/images/bg_02.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: $spacing * 10;
+  min-height: 560px;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 90px;
+  padding-top: 140px;
+  background: url("/images/bg_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: $spacing * 10;
 
-    &__card {
-        border: none;
-        min-height: $spacing * 60;
-        max-height: $spacing * 65;
-        margin-bottom: $spacing * 3;
-        cursor: pointer;
-        transition: ease-in-out 0.3s;
+  &__card {
+    border: none;
+    height: $spacing * 65;
+    margin-bottom: $spacing * 3;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
 
-        &:hover {
-            background-color: getColor(fc-light-orange);
-        }
-
-        @include breakpoint(mobile) {
-            margin-top: $spacing * 2;
-        }
-
-        &__body {
-            -webkit-box-shadow: 0 5px 40px rgba(0,0,0,.05);
-            box-shadow: 0 5px 40px rgba(0,0,0,.05);
-            text-align: center;
-            padding: ($spacing * 10) ($spacing * 4);
-
-            &__image {
-                min-height: $spacing * 22; 
-                max-height: $spacing * 22;
-            }
-
-            &__title {
-                margin-top: $spacing * 4;
-                font-size: $spacing * 3;
-                color: getColor(fc-black);
-                font-weight: 800;
-                transition: .3s linear;
-                line-height: 1.4;
-
-                &:hover {
-                    color: getColor(fc-orange);
-                }
-            }
-
-            &__description {
-                font-size: $spacing * 2;
-                line-height: 1.625;
-                color: getColor(fc-gray);
-            }
-        }
-        
+    &:hover {
+      background-color: getColor(fc-light-orange);
     }
 
     @include breakpoint(mobile) {
-        margin-top: $spacing * 5;
+      margin-top: $spacing * 2;
     }
 
-    &__statement {
-        padding-top: $spacing * 5;
+    &__body {
+      -webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 5px 40px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      padding: ($spacing * 10) ($spacing * 4);
+
+      &__image {
+        min-height: $spacing * 22;
+        max-height: $spacing * 22;
+      }
+
+      &__title {
+        margin-top: $spacing * 4;
+        font-size: $spacing * 3;
+        color: getColor(fc-black);
+        font-weight: 800;
+        transition: 0.3s linear;
+        line-height: 1.4;
+
+        &:hover {
+          color: getColor(fc-orange);
+        }
+      }
+
+      &__description {
+        font-size: $spacing * 2;
+        line-height: 1.625;
+        color: getColor(fc-gray);
+      }
     }
+  }
+
+  @include breakpoint(mobile) {
+    margin-top: $spacing * 5;
+  }
+
+  &__statement {
+    padding-top: $spacing * 5;
+  }
 }
