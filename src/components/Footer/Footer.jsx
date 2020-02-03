@@ -156,6 +156,15 @@ const Footer = () => {
                 <h4>Quick Links</h4>
               </div>
               <div className="footer__top__info__content">
+              <div className="footer__top__info__content__item media">
+                  <div className="footer__top__info__content__item media__title">
+                    <h5>
+                      <a href="#pricing" title="pricing">
+                        &#9658;&nbsp; Pricing
+                      </a>
+                    </h5>
+                  </div>
+                </div>
                 <div className="footer__top__info__content__item media">
                   <div className="footer__top__info__content__item media__title">
                     <h5>
